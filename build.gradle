@@ -23,6 +23,12 @@ repositories {
 }
 
 publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			artifact jar
+		}
+	}
+
 	repositories {
 		maven {
 			name = "GitHubPackages"
